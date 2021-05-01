@@ -1,0 +1,57 @@
+/*
+	jquery.paginate.css  
+	Version 0.1.1
+*/
+
+.paginate-pagination ul {		
+	margin: 20px 0;
+	padding: 0;
+	list-style: none;
+}
+
+.paginate-pagination ul:after {
+	content: ' ';
+	display: table;
+	clear: both;	
+}
+
+.paginate-pagination ul > li {	
+	float: left;	
+	margin: 7px 7px 0 0;
+}
+
+.paginate-pagination ul > li > a.page {
+	display: block;
+	height: 40px;
+	width: 40px;
+	padding: 10px 0;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	color: #1B1A1A;
+	border: 1px solid var(--black-color);	
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.paginate-pagination ul > li > a.page:hover { 
+	color: #fff;
+	background: #1B1A1A;
+}
+.paginate-pagination ul > li > a.page.active { 
+	color: #fff;
+	background: #1B1A1A;
+	cursor: default; 
+}
+
+.paginate-pagination ul > li > a.page-next.deactive,
+.paginate-pagination ul > li > a.page-prev.deactive { 	 
+	pointer-events: none;
+	opacity: .3;
+}
+
+/* @media (max-width: 768px) {
+	.paginate-pagination ul {
+		float: right;
+	}
+} */
