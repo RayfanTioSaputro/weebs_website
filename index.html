@@ -21,10 +21,17 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbarSupportedContent" data-offset="90">
+
+    <div id="scroll-to-top" data-show="false">
+        <i data-feather="arrow-up" width="24px" height="24px" stroke-width="1.5"></i>
+    </div>
+    <a href="" id="contact-us" class="my-auto">
+        <img src="assets/images/whatsapp-icon.svg" alt="">
+    </a>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light py-4">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top py-3 py-md-4 py-lg-4">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="assets/images/logo-3.svg" alt="Logo" />
@@ -33,22 +40,27 @@
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <!-- <span class="navbar-toggler-icon"></span> -->
-                    <i class="icon" data-feather="menu" width="30px" height="30px" stroke-width="1.5"
+                    <i class="icon" data-feather="menu" width="30px" height="30px" stroke-width="1"
                         style="color: #393741;"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto mt-3 mt-md-0 mt-lg-0">
-                        <li class="nav-item mr-0 mr-md-3 mr-lg-3 active">
-                            <a class="nav-link" href="#">Beranda <span class="sr-only">(current)</span></a>
+                        <li class="nav-item mr-0 mr-md-3 mr-lg-3">
+                            <a class="nav-link" href="#section-landing">
+                                Beranda <span class="sr-only">(current)</span>
+                            </a>
                         </li>
                         <li class="nav-item mr-0 mr-md-3 mr-lg-3">
-                            <a class="nav-link" href="#">Fitur</a>
+                            <a class="nav-link" href="#section-website-usability">Kegunaan</a>
                         </li>
                         <li class="nav-item mr-0 mr-md-3 mr-lg-3">
-                            <a class="nav-link" href="#">Template</a>
+                            <a class="nav-link" href="#section-advantages">Keuntungan</a>
+                        </li>
+                        <li class="nav-item mr-0 mr-md-3 mr-lg-3">
+                            <a class="nav-link" href="#section-template">Template</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
+                            <a class="nav-link" href="blog.html">Blog</a>
                         </li>
                     </ul>
                 </div>
@@ -92,7 +104,7 @@
         </div>
     </header> -->
 
-    <div class="container">
+    <main class="container">
         <section class="section-landing" id="section-landing">
             <div class="row">
                 <div class="col-md-6 col-lg-6 order-2 order-md-1 order-lg-1">
@@ -567,7 +579,7 @@
                                 anda.
                             </p>
                         </div>
-                        <div class="content text-center owl-carousel owl-theme">
+                        <div class="content text-center owl-carousel content-section-website-usability owl-theme">
                             <div class="sub-content sub-content-1 item">
                                 <div class="icon mx-auto">
                                     <img src="assets/images/profesional-icon.svg" alt="Icon" />
@@ -701,7 +713,7 @@
                                 Ada beberapa keuntungan yang bisa anda dapatkan dengan membuat website di Weebs.
                             </p>
                         </div>
-                        <div class="content text-center owl-carousel owl-theme">
+                        <div class="content text-center owl-carousel content-section-advantages owl-theme">
                             <div class="sub-content sub-content-1 item">
                                 <div class="icon mx-auto">
                                     <img src="assets/images/edit-icon.svg" alt="Icon" />
@@ -748,14 +760,95 @@
             </div>
         </section>
 
-    </div>
+        <section class="section-template" id="section-template">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header">
+                        <h3 class="heading text-capitalize">
+                            tema yang menarik dan profesional
+                        </h3>
+                        <p class="caption">
+                            Berikut beberapa tema website yang bisa dipilih sesuai dengan kebutuhan website anda.
+                        </p>
+                    </div>
+                    <div class="content owl-carousel content-section-template owl-theme">
+                        <div class="sub-content item">
+                            <div class="image">
+                                <a href="">
+                                    <img src="assets/images/landing-page.jpg" alt="Image" />
+                                </a>
+                            </div>
+                            <h6 class="title text-capitalize">
+                                <a href="">
+                                    The Great Template
+                                </a>
+                            </h6>
+                        </div>
+                        <div class="sub-content item">
+                            <div class="image">
+                                <a href="">
+                                    <img src="assets/images/landing-page-2.jpg" alt="Image" />
+                                </a>
+                            </div>
+                            <h6 class="title text-capitalize">
+                                <a href="">
+                                    The Great Template
+                                </a>
+                            </h6>
+                        </div>
+                        <div class="sub-content item">
+                            <div class="image">
+                                <a href="">
+                                    <img src="assets/images/landing-page-3.jpg" alt="Image" />
+                                </a>
+                            </div>
+                            <h6 class="title text-capitalize">
+                                <a href="">
+                                    The Great Template
+                                </a>
+                            </h6>
+                        </div>
+                        <div class="sub-content item">
+                            <div class="image">
+                                <a href="">
+                                    <img src="assets/images/landing-page-4.jpg" alt="Image" />
+                                </a>
+                            </div>
+                            <h6 class="title text-capitalize">
+                                <a href="">
+                                    The Great Template
+                                </a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="container d-inline-block d-md-flex d-lg-flex text-center justify-content-between">
+                <div class="copyright">
+                    <p>
+                        Copyright © 2021 Weebs. All rights reserved
+                    </p>
+                </div>
+                <div class="socmed">
+                    <a class="email" href="#">
+                        <i data-feather="mail" width="24px" height="24px" stroke-width="1"></i>
+                    </a>
+                    <a class="instagram" href="#">
+                        <i data-feather="instagram" width="24px" height="24px" stroke-width="1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 <!-- Load Jquery JS File -->
 <script src="library/jquery/jquery-3.3.1.min.js"></script>
-<script src="library/jquery/jquery-ui.js"></script>
-<script src="library/jquery/jquery.easing.1.3.js"></script>
-<script src="library/jquery/jquery.sticky.js"></script>
 
 <!-- Load Bootstrap JS File -->
 <script src="library/bootstrap/js/bootstrap.min.js"></script>
